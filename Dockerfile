@@ -7,4 +7,4 @@ RUN apk add --update openjdk7 && \
 	tar -xvzf /tmp/apache-tomcat-8.5.6.tar.gz &&\
 	rm /tmp/apache-tomcat-8.5.6.tar.gz  
 CMD ["/logiciels/tomcat/apache-tomcat-8.5.6/bin/catalina.sh", "run"]
-
+VOLUME ["/logiciels/tomcat/apache-tomcat-8.5.6/webapps/ROOT"]
